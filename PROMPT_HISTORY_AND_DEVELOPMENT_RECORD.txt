@@ -1,0 +1,264 @@
+COMP3710 LAB DEMONSTRATION 2
+PROMPT HISTORY AND DEVELOPMENT RECORD
+
+Student: Rashim Kaur
+Student number: 50419139
+Course: COMP3710 Pattern Analysis
+Lab: Lab Demonstration 2
+Date: 15 September 2026
+
+
+PURPOSE OF THE RECORD
+
+This record documents the use of AI assistance during the development of the
+code and experiments for Lab Demonstration 2.
+
+AI was mainly used for understanding concepts, generating and modifying code,
+debugging problems, helping with Rangpur and Slurm execution, and explaining
+model results.
+
+The code was not accepted without checking. Implementations were run and tested
+on the required datasets and hardware, and changes were made when problems were
+found.
+
+
+PART 1: DISCRETE FOURIER TRANSFORM (DFT)
+
+AI assistance was used to help understand and implement the required DFT
+calculations and visualisations.
+
+The implementation was checked by running the notebook and comparing the
+resulting frequency-domain representation with the expected behaviour of the
+input image.
+
+The final DFT implementation is included in:
+
+DFT.ipynb
+
+
+PART 2: EIGENFACES
+
+AI assistance was used to help understand the Eigenfaces/PCA process and the
+implementation required for the lab.
+
+The main steps involved preparing the face data, applying PCA and visualising
+the resulting eigenfaces and reconstructed faces.
+
+The implementation was run and checked in the notebook.
+
+The final implementation is included in:
+
+EigenFaces.ipynb
+
+
+PART 3: CONVOLUTIONAL NEURAL NETWORKS
+
+AI assistance was used for understanding CNN architecture, PyTorch
+implementation and troubleshooting training code.
+
+The implementation was tested by training the model and checking the resulting
+classification performance and outputs.
+
+The final implementation is included in:
+
+CNN.ipynb
+
+
+PART 3.2: DAWNBENCH
+
+AI assistance was used during the development and optimisation of the
+DAWNBench-style CIFAR-10 training implementation.
+
+Help was used for:
+- CNN/ResNet architecture;
+- data augmentation;
+- optimiser and learning-rate scheduling;
+- mixed precision training;
+- batch size and DataLoader settings;
+- Rangpur GPU execution; and
+- debugging and comparing training runs.
+
+The final implementation used a custom CIFAR-style ResNet-18 with data
+augmentation, SGD with momentum, cosine learning-rate scheduling and AMP.
+
+The final saved configuration achieved approximately 94.29% accuracy with a
+training time of approximately 367.58 seconds on Rangpur using an A100 GPU.
+
+A separate one-epoch run was also prepared so that training and inference could
+be demonstrated on Rangpur.
+
+Relevant files include:
+
+DAWNBench.ipynb
+dawnbench_train.py
+dawnbench_job.sh
+dawnbench_demo.py
+dawnbench_demo_job.sh
+
+
+PART 4: OASIS RECOGNITION TASKS
+
+
+TASK 1: VAE
+
+AI assistance was used to help design and debug the convolutional VAE for the
+OASIS brain MRI images.
+
+The implementation used:
+- grayscale OASIS MRI images;
+- 64 x 64 input images;
+- a 2-dimensional latent space;
+- an encoder and decoder using convolutional layers;
+- reconstruction loss and KL divergence; and
+- sampling from the latent space.
+
+The model was trained on Rangpur using an A100 GPU.
+
+The final training used 30 epochs and 9664 training images. The training loss
+decreased from approximately 1276.45 to 1047.85.
+
+The trained model was then used to produce:
+- reconstructed MRI images;
+- a latent-space visualisation; and
+- samples generated from the 2D latent space.
+
+The results were visually checked to make sure the latent samples produced
+brain-like structures and showed variation.
+
+Relevant files include:
+
+oasis_vae.py
+oasis_vae_job.sh
+oasis_vae_visualize.py
+
+
+TASK 2: U-NET
+
+AI assistance was used to help develop and debug the U-Net segmentation model
+for the OASIS dataset.
+
+The implementation was adapted to the four mask classes in the dataset:
+- background;
+- label 1;
+- label 2; and
+- label 3.
+
+The segmentation masks were converted into class indices and the network
+produced four categorical output channels.
+
+The model used an encoder-decoder U-Net structure with skip connections.
+
+The model was trained on Rangpur using an A100 GPU for 40 epochs.
+
+The best validation result achieved:
+
+Mean DSC: 0.9663
+Background DSC: 0.9996
+Label 1 DSC: 0.9404
+Label 2 DSC: 0.9528
+Label 3 DSC: 0.9724
+
+The predictions were visualised by comparing the original MRI, predicted
+segmentation and overlay.
+
+Relevant files include:
+
+oasis_unet.py
+oasis_unet_job.sh
+oasis_unet_visualize.py
+
+
+TASK 3: GAN
+
+AI assistance was used to help develop and debug a DCGAN-style model for
+generating OASIS brain MRI images.
+
+The implementation used:
+- 64 x 64 grayscale images;
+- a 100-dimensional latent vector;
+- a convolutional generator;
+- a convolutional discriminator;
+- batch normalisation;
+- spectral normalisation in the discriminator;
+- hinge GAN loss; and
+- Adam optimisation.
+
+The model was trained on Rangpur using an A100 GPU for 50 epochs.
+
+The training took approximately 210.34 seconds.
+
+Generated samples were saved throughout training so that the progression of
+the generator could be checked.
+
+The final samples showed brain MRI-like structures with visible variation
+between generated images. The training progression was also checked for signs
+of mode collapse.
+
+Relevant files include:
+
+oasis_gan.py
+oasis_gan_job.sh
+gan_progression.py
+
+
+RANGPUR AND SLURM DEVELOPMENT
+
+AI assistance was also used when setting up and debugging Slurm job scripts
+for Rangpur.
+
+The training jobs were configured to use the COMP3710 partition, the COMP3710
+account and an A100 GPU.
+
+Problems with job configuration, CUDA execution, model loading and visualisation
+were investigated during development.
+
+The final experiments were run on Rangpur rather than relying only on local
+execution.
+
+
+VISUALISATION AND DEBUGGING
+
+AI assistance was used to troubleshoot issues when loading trained models and
+creating visualisations.
+
+For example, model architecture definitions in the visualisation scripts had
+to match the saved model checkpoints. The VAE visualisation was also separated
+from the training script so that loading the model would not accidentally start
+training again.
+
+The generated reconstruction, segmentation and GAN images were inspected
+after running the scripts.
+
+
+GIT AND PROJECT ORGANISATION
+
+AI assistance was used to help organise the project into separate notebooks,
+training scripts, Slurm job scripts and visualisation scripts.
+
+The work was committed to a personal GitHub repository using separate commits
+for different stages of development.
+
+The dataset files were kept out of the repository using a .gitignore file.
+
+
+OVERALL REFLECTION
+
+AI was useful mainly for explaining unfamiliar concepts, suggesting code
+structures and helping identify errors.
+
+A number of changes were made after testing the suggested code. In particular,
+the OASIS models had to be adapted to the actual dataset structure, image and
+mask formats, available GPU environment and the requirements of the lab.
+
+The final results were produced by running the implementations and checking the
+outputs rather than relying only on AI-generated answers.
+
+
+DECLARATION
+
+AI assistance was used for code generation, code modification, debugging,
+technical explanations and development support.
+
+I reviewed and tested the code, made changes where required, and ran the
+experiments myself. I am responsible for understanding the methods,
+implementations and results presented in this demonstration.
