@@ -1,0 +1,172 @@
+==========================================
+DAWNBench ResNet-18 Training Job
+==========================================
+Job ID: 590435
+Node: a100-5
+Date: Tue Sep 15 02:29:04 AEST 2026
+
+GPU information:
+Tue Sep 15 02:29:04 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   40C    P0             36W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+Starting training...
+
+======================================================================
+DAWNBench - CIFAR-10 ResNet-18
+======================================================================
+PyTorch version: 2.14.0+cu130
+CUDA available: True
+GPU: NVIDIA A100-PCIE-40GB
+Device: cuda
+Training images: 50000
+Testing images: 10000
+Training batch size: 512
+Model created.
+Parameters: 11173962
+
+Training configuration
+----------------------------------------------------------------------
+Epochs: 100
+Optimizer: SGD
+Learning rate: 0.1
+Momentum: 0.9
+Weight decay: 5e-4
+Label smoothing: 0.1
+Learning-rate schedule: Cosine Annealing
+Mixed precision: FP16
+----------------------------------------------------------------------
+
+Starting training...
+======================================================================
+Epoch 01/100 | Loss: 2.4788 | Train Acc: 17.46% | LR: 0.099975 | Time: 5.27s
+Epoch 02/100 | Loss: 1.9065 | Train Acc: 32.27% | LR: 0.099901 | Time: 3.87s
+Epoch 03/100 | Loss: 1.7258 | Train Acc: 42.01% | LR: 0.099778 | Time: 4.06s
+Epoch 04/100 | Loss: 1.6056 | Train Acc: 48.36% | LR: 0.099606 | Time: 3.88s
+Epoch 05/100 | Loss: 1.4907 | Train Acc: 54.30% | LR: 0.099384 | Time: 3.91s
+Epoch 06/100 | Loss: 1.3861 | Train Acc: 59.71% | LR: 0.099114 | Time: 3.93s
+Epoch 07/100 | Loss: 1.2922 | Train Acc: 64.09% | LR: 0.098796 | Time: 3.91s
+Epoch 08/100 | Loss: 1.2255 | Train Acc: 67.41% | LR: 0.098429 | Time: 3.92s
+Epoch 09/100 | Loss: 1.1693 | Train Acc: 70.06% | LR: 0.098015 | Time: 3.88s
+Epoch 10/100 | Loss: 1.1107 | Train Acc: 72.81% | LR: 0.097553 | Time: 3.90s
+Epoch 11/100 | Loss: 1.0622 | Train Acc: 75.22% | LR: 0.097044 | Time: 3.91s
+Epoch 12/100 | Loss: 1.0131 | Train Acc: 77.39% | LR: 0.096489 | Time: 3.90s
+Epoch 13/100 | Loss: 0.9794 | Train Acc: 79.08% | LR: 0.095888 | Time: 3.92s
+Epoch 14/100 | Loss: 0.9418 | Train Acc: 80.55% | LR: 0.095241 | Time: 3.93s
+Epoch 15/100 | Loss: 0.9166 | Train Acc: 81.83% | LR: 0.094550 | Time: 3.92s
+Epoch 16/100 | Loss: 0.8982 | Train Acc: 82.69% | LR: 0.093815 | Time: 3.95s
+Epoch 17/100 | Loss: 0.8762 | Train Acc: 83.75% | LR: 0.093037 | Time: 3.93s
+Epoch 18/100 | Loss: 0.8549 | Train Acc: 84.59% | LR: 0.092216 | Time: 3.92s
+Epoch 19/100 | Loss: 0.8429 | Train Acc: 85.03% | LR: 0.091354 | Time: 3.92s
+Epoch 20/100 | Loss: 0.8276 | Train Acc: 85.77% | LR: 0.090451 | Time: 3.92s
+Epoch 21/100 | Loss: 0.8164 | Train Acc: 86.10% | LR: 0.089508 | Time: 3.91s
+Epoch 22/100 | Loss: 0.8021 | Train Acc: 86.80% | LR: 0.088526 | Time: 3.92s
+Epoch 23/100 | Loss: 0.7882 | Train Acc: 87.40% | LR: 0.087506 | Time: 3.90s
+Epoch 24/100 | Loss: 0.7766 | Train Acc: 87.93% | LR: 0.086448 | Time: 3.95s
+Epoch 25/100 | Loss: 0.7690 | Train Acc: 88.34% | LR: 0.085355 | Time: 3.91s
+Epoch 26/100 | Loss: 0.7580 | Train Acc: 88.78% | LR: 0.084227 | Time: 3.94s
+Epoch 27/100 | Loss: 0.7463 | Train Acc: 89.46% | LR: 0.083066 | Time: 3.92s
+Epoch 28/100 | Loss: 0.7399 | Train Acc: 89.52% | LR: 0.081871 | Time: 3.92s
+Epoch 29/100 | Loss: 0.7340 | Train Acc: 89.89% | LR: 0.080645 | Time: 3.92s
+Epoch 30/100 | Loss: 0.7261 | Train Acc: 90.20% | LR: 0.079389 | Time: 3.93s
+Epoch 31/100 | Loss: 0.7221 | Train Acc: 90.48% | LR: 0.078104 | Time: 3.96s
+Epoch 32/100 | Loss: 0.7140 | Train Acc: 90.68% | LR: 0.076791 | Time: 3.93s
+Epoch 33/100 | Loss: 0.7085 | Train Acc: 91.17% | LR: 0.075452 | Time: 3.92s
+Epoch 34/100 | Loss: 0.7053 | Train Acc: 91.15% | LR: 0.074088 | Time: 3.95s
+Epoch 35/100 | Loss: 0.6992 | Train Acc: 91.34% | LR: 0.072700 | Time: 4.05s
+Epoch 36/100 | Loss: 0.6937 | Train Acc: 91.70% | LR: 0.071289 | Time: 3.97s
+Epoch 37/100 | Loss: 0.6903 | Train Acc: 91.80% | LR: 0.069857 | Time: 3.95s
+Epoch 38/100 | Loss: 0.6861 | Train Acc: 91.95% | LR: 0.068406 | Time: 3.94s
+Epoch 39/100 | Loss: 0.6750 | Train Acc: 92.47% | LR: 0.066937 | Time: 3.94s
+Epoch 40/100 | Loss: 0.6769 | Train Acc: 92.31% | LR: 0.065451 | Time: 3.91s
+Epoch 41/100 | Loss: 0.6681 | Train Acc: 92.73% | LR: 0.063950 | Time: 3.90s
+Epoch 42/100 | Loss: 0.6660 | Train Acc: 92.90% | LR: 0.062434 | Time: 3.92s
+Epoch 43/100 | Loss: 0.6618 | Train Acc: 92.95% | LR: 0.060907 | Time: 3.91s
+Epoch 44/100 | Loss: 0.6545 | Train Acc: 93.37% | LR: 0.059369 | Time: 3.97s
+Epoch 45/100 | Loss: 0.6547 | Train Acc: 93.19% | LR: 0.057822 | Time: 3.93s
+Epoch 46/100 | Loss: 0.6474 | Train Acc: 93.71% | LR: 0.056267 | Time: 3.91s
+Epoch 47/100 | Loss: 0.6437 | Train Acc: 93.85% | LR: 0.054705 | Time: 3.89s
+Epoch 48/100 | Loss: 0.6376 | Train Acc: 94.15% | LR: 0.053140 | Time: 3.94s
+Epoch 49/100 | Loss: 0.6376 | Train Acc: 94.12% | LR: 0.051571 | Time: 3.94s
+Epoch 50/100 | Loss: 0.6366 | Train Acc: 94.11% | LR: 0.050000 | Time: 3.94s
+Epoch 51/100 | Loss: 0.6309 | Train Acc: 94.43% | LR: 0.048429 | Time: 3.95s
+Epoch 52/100 | Loss: 0.6256 | Train Acc: 94.59% | LR: 0.046860 | Time: 3.94s
+Epoch 53/100 | Loss: 0.6228 | Train Acc: 94.73% | LR: 0.045295 | Time: 3.90s
+Epoch 54/100 | Loss: 0.6172 | Train Acc: 95.08% | LR: 0.043733 | Time: 3.91s
+Epoch 55/100 | Loss: 0.6186 | Train Acc: 94.93% | LR: 0.042178 | Time: 3.93s
+Epoch 56/100 | Loss: 0.6113 | Train Acc: 95.28% | LR: 0.040631 | Time: 3.92s
+Epoch 57/100 | Loss: 0.6098 | Train Acc: 95.41% | LR: 0.039093 | Time: 3.92s
+Epoch 58/100 | Loss: 0.6058 | Train Acc: 95.53% | LR: 0.037566 | Time: 3.93s
+Epoch 59/100 | Loss: 0.5998 | Train Acc: 95.82% | LR: 0.036050 | Time: 3.91s
+Epoch 60/100 | Loss: 0.5982 | Train Acc: 95.90% | LR: 0.034549 | Time: 3.93s
+Epoch 61/100 | Loss: 0.5956 | Train Acc: 95.96% | LR: 0.033063 | Time: 3.94s
+Epoch 62/100 | Loss: 0.5953 | Train Acc: 95.95% | LR: 0.031594 | Time: 3.93s
+Epoch 63/100 | Loss: 0.5868 | Train Acc: 96.36% | LR: 0.030143 | Time: 3.93s
+Epoch 64/100 | Loss: 0.5870 | Train Acc: 96.40% | LR: 0.028711 | Time: 3.92s
+Epoch 65/100 | Loss: 0.5827 | Train Acc: 96.54% | LR: 0.027300 | Time: 3.96s
+Epoch 66/100 | Loss: 0.5794 | Train Acc: 96.63% | LR: 0.025912 | Time: 3.95s
+Epoch 67/100 | Loss: 0.5755 | Train Acc: 96.85% | LR: 0.024548 | Time: 4.04s
+Epoch 68/100 | Loss: 0.5715 | Train Acc: 97.10% | LR: 0.023209 | Time: 3.93s
+Epoch 69/100 | Loss: 0.5687 | Train Acc: 97.18% | LR: 0.021896 | Time: 3.93s
+Epoch 70/100 | Loss: 0.5678 | Train Acc: 97.20% | LR: 0.020611 | Time: 3.98s
+Epoch 71/100 | Loss: 0.5661 | Train Acc: 97.26% | LR: 0.019355 | Time: 3.94s
+Epoch 72/100 | Loss: 0.5601 | Train Acc: 97.55% | LR: 0.018129 | Time: 3.92s
+Epoch 73/100 | Loss: 0.5593 | Train Acc: 97.58% | LR: 0.016934 | Time: 3.93s
+Epoch 74/100 | Loss: 0.5564 | Train Acc: 97.73% | LR: 0.015773 | Time: 3.93s
+Epoch 75/100 | Loss: 0.5532 | Train Acc: 97.84% | LR: 0.014645 | Time: 3.93s
+Epoch 76/100 | Loss: 0.5498 | Train Acc: 98.01% | LR: 0.013552 | Time: 3.91s
+Epoch 77/100 | Loss: 0.5495 | Train Acc: 98.10% | LR: 0.012494 | Time: 3.89s
+Epoch 78/100 | Loss: 0.5452 | Train Acc: 98.20% | LR: 0.011474 | Time: 3.92s
+Epoch 79/100 | Loss: 0.5464 | Train Acc: 98.12% | LR: 0.010492 | Time: 3.93s
+Epoch 80/100 | Loss: 0.5431 | Train Acc: 98.27% | LR: 0.009549 | Time: 3.92s
+Epoch 81/100 | Loss: 0.5416 | Train Acc: 98.32% | LR: 0.008646 | Time: 3.92s
+Epoch 82/100 | Loss: 0.5389 | Train Acc: 98.43% | LR: 0.007784 | Time: 3.92s
+Epoch 83/100 | Loss: 0.5395 | Train Acc: 98.41% | LR: 0.006963 | Time: 3.92s
+Epoch 84/100 | Loss: 0.5335 | Train Acc: 98.72% | LR: 0.006185 | Time: 3.93s
+Epoch 85/100 | Loss: 0.5364 | Train Acc: 98.51% | LR: 0.005450 | Time: 3.93s
+Epoch 86/100 | Loss: 0.5347 | Train Acc: 98.64% | LR: 0.004759 | Time: 3.93s
+Epoch 87/100 | Loss: 0.5325 | Train Acc: 98.71% | LR: 0.004112 | Time: 3.90s
+Epoch 88/100 | Loss: 0.5319 | Train Acc: 98.73% | LR: 0.003511 | Time: 3.92s
+Epoch 89/100 | Loss: 0.5325 | Train Acc: 98.73% | LR: 0.002956 | Time: 3.94s
+Epoch 90/100 | Loss: 0.5297 | Train Acc: 98.80% | LR: 0.002447 | Time: 3.92s
+Epoch 91/100 | Loss: 0.5295 | Train Acc: 98.81% | LR: 0.001985 | Time: 3.93s
+Epoch 92/100 | Loss: 0.5291 | Train Acc: 98.86% | LR: 0.001571 | Time: 3.93s
+Epoch 93/100 | Loss: 0.5268 | Train Acc: 98.95% | LR: 0.001204 | Time: 3.93s
+Epoch 94/100 | Loss: 0.5277 | Train Acc: 98.93% | LR: 0.000886 | Time: 3.97s
+Epoch 95/100 | Loss: 0.5261 | Train Acc: 98.99% | LR: 0.000616 | Time: 3.95s
+Epoch 96/100 | Loss: 0.5276 | Train Acc: 98.94% | LR: 0.000394 | Time: 3.93s
+Epoch 97/100 | Loss: 0.5279 | Train Acc: 98.91% | LR: 0.000222 | Time: 3.94s
+Epoch 98/100 | Loss: 0.5268 | Train Acc: 98.97% | LR: 0.000099 | Time: 3.93s
+Epoch 99/100 | Loss: 0.5252 | Train Acc: 99.00% | LR: 0.000025 | Time: 4.03s
+Epoch 100/100 | Loss: 0.5275 | Train Acc: 98.91% | LR: 0.000000 | Time: 3.96s
+======================================================================
+Training complete!
+Total training time: 394.44s
+Average epoch time: 3.94s
+
+Evaluating on CIFAR-10 test set...
+======================================================================
+Test Accuracy: 95.12%
+Correct: 9512/10000
+Inference time: 0.59s
+Training time: 394.44s
+======================================================================
+
+DAWNBench run finished successfully.

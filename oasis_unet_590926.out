@@ -1,0 +1,78 @@
+=== OASIS U-NET JOB ===
+Tue Sep 15 14:11:17 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   28C    P0             29W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Device: cuda
+GPU: NVIDIA A100-PCIE-40GB
+Loaded 9664 image/mask pairs
+Loaded 1120 image/mask pairs
+Model parameters: 7762564
+Epoch 01/40 - Loss: 0.1982 - Background DSC: 0.9984 - Label 1 DSC: 0.9108 - Label 2 DSC: 0.9405 - Label 3 DSC: 0.9669 - Mean DSC: 0.9541
+  Saved new best model.
+Epoch 02/40 - Loss: 0.0442 - Background DSC: 0.9991 - Label 1 DSC: 0.9082 - Label 2 DSC: 0.9349 - Label 3 DSC: 0.9673 - Mean DSC: 0.9524
+Epoch 03/40 - Loss: 0.0361 - Background DSC: 0.9992 - Label 1 DSC: 0.9068 - Label 2 DSC: 0.9036 - Label 3 DSC: 0.9240 - Mean DSC: 0.9334
+Epoch 04/40 - Loss: 0.0330 - Background DSC: 0.9991 - Label 1 DSC: 0.9118 - Label 2 DSC: 0.9437 - Label 3 DSC: 0.9687 - Mean DSC: 0.9558
+  Saved new best model.
+Epoch 05/40 - Loss: 0.0307 - Background DSC: 0.9993 - Label 1 DSC: 0.9313 - Label 2 DSC: 0.9447 - Label 3 DSC: 0.9657 - Mean DSC: 0.9603
+  Saved new best model.
+Epoch 06/40 - Loss: 0.0290 - Background DSC: 0.9994 - Label 1 DSC: 0.9247 - Label 2 DSC: 0.9441 - Label 3 DSC: 0.9691 - Mean DSC: 0.9593
+Epoch 07/40 - Loss: 0.0273 - Background DSC: 0.9993 - Label 1 DSC: 0.9326 - Label 2 DSC: 0.9456 - Label 3 DSC: 0.9668 - Mean DSC: 0.9611
+  Saved new best model.
+Epoch 08/40 - Loss: 0.0264 - Background DSC: 0.9992 - Label 1 DSC: 0.9333 - Label 2 DSC: 0.9512 - Label 3 DSC: 0.9722 - Mean DSC: 0.9640
+  Saved new best model.
+Epoch 09/40 - Loss: 0.0260 - Background DSC: 0.9994 - Label 1 DSC: 0.9355 - Label 2 DSC: 0.9501 - Label 3 DSC: 0.9700 - Mean DSC: 0.9638
+Epoch 10/40 - Loss: 0.0249 - Background DSC: 0.9994 - Label 1 DSC: 0.9230 - Label 2 DSC: 0.9424 - Label 3 DSC: 0.9691 - Mean DSC: 0.9585
+Epoch 11/40 - Loss: 0.0246 - Background DSC: 0.9994 - Label 1 DSC: 0.9370 - Label 2 DSC: 0.9525 - Label 3 DSC: 0.9724 - Mean DSC: 0.9654
+  Saved new best model.
+Epoch 12/40 - Loss: 0.0239 - Background DSC: 0.9994 - Label 1 DSC: 0.9311 - Label 2 DSC: 0.9471 - Label 3 DSC: 0.9692 - Mean DSC: 0.9617
+Epoch 13/40 - Loss: 0.0236 - Background DSC: 0.9995 - Label 1 DSC: 0.9381 - Label 2 DSC: 0.9434 - Label 3 DSC: 0.9613 - Mean DSC: 0.9606
+Epoch 14/40 - Loss: 0.0231 - Background DSC: 0.9995 - Label 1 DSC: 0.9376 - Label 2 DSC: 0.9340 - Label 3 DSC: 0.9569 - Mean DSC: 0.9570
+Epoch 15/40 - Loss: 0.0232 - Background DSC: 0.9995 - Label 1 DSC: 0.9332 - Label 2 DSC: 0.9502 - Label 3 DSC: 0.9717 - Mean DSC: 0.9636
+Epoch 16/40 - Loss: 0.0227 - Background DSC: 0.9995 - Label 1 DSC: 0.9387 - Label 2 DSC: 0.9480 - Label 3 DSC: 0.9690 - Mean DSC: 0.9638
+Epoch 17/40 - Loss: 0.0224 - Background DSC: 0.9994 - Label 1 DSC: 0.9260 - Label 2 DSC: 0.9464 - Label 3 DSC: 0.9705 - Mean DSC: 0.9605
+Epoch 18/40 - Loss: 0.0221 - Background DSC: 0.9995 - Label 1 DSC: 0.9389 - Label 2 DSC: 0.9523 - Label 3 DSC: 0.9723 - Mean DSC: 0.9657
+  Saved new best model.
+Epoch 19/40 - Loss: 0.0218 - Background DSC: 0.9995 - Label 1 DSC: 0.9377 - Label 2 DSC: 0.9495 - Label 3 DSC: 0.9701 - Mean DSC: 0.9642
+Epoch 20/40 - Loss: 0.0214 - Background DSC: 0.9995 - Label 1 DSC: 0.9399 - Label 2 DSC: 0.9478 - Label 3 DSC: 0.9654 - Mean DSC: 0.9632
+Epoch 21/40 - Loss: 0.0214 - Background DSC: 0.9996 - Label 1 DSC: 0.9282 - Label 2 DSC: 0.9450 - Label 3 DSC: 0.9686 - Mean DSC: 0.9603
+Epoch 22/40 - Loss: 0.0213 - Background DSC: 0.9996 - Label 1 DSC: 0.9387 - Label 2 DSC: 0.9522 - Label 3 DSC: 0.9723 - Mean DSC: 0.9657
+Epoch 23/40 - Loss: 0.0211 - Background DSC: 0.9996 - Label 1 DSC: 0.9403 - Label 2 DSC: 0.9520 - Label 3 DSC: 0.9717 - Mean DSC: 0.9659
+  Saved new best model.
+Epoch 24/40 - Loss: 0.0204 - Background DSC: 0.9995 - Label 1 DSC: 0.9277 - Label 2 DSC: 0.9501 - Label 3 DSC: 0.9717 - Mean DSC: 0.9622
+Epoch 25/40 - Loss: 0.0205 - Background DSC: 0.9995 - Label 1 DSC: 0.9392 - Label 2 DSC: 0.9472 - Label 3 DSC: 0.9653 - Mean DSC: 0.9628
+Epoch 26/40 - Loss: 0.0200 - Background DSC: 0.9996 - Label 1 DSC: 0.9404 - Label 2 DSC: 0.9528 - Label 3 DSC: 0.9724 - Mean DSC: 0.9663
+  Saved new best model.
+Epoch 27/40 - Loss: 0.0200 - Background DSC: 0.9996 - Label 1 DSC: 0.9289 - Label 2 DSC: 0.9475 - Label 3 DSC: 0.9702 - Mean DSC: 0.9616
+Epoch 28/40 - Loss: 0.0195 - Background DSC: 0.9995 - Label 1 DSC: 0.9357 - Label 2 DSC: 0.9506 - Label 3 DSC: 0.9725 - Mean DSC: 0.9646
+Epoch 29/40 - Loss: 0.0193 - Background DSC: 0.9996 - Label 1 DSC: 0.9397 - Label 2 DSC: 0.9514 - Label 3 DSC: 0.9714 - Mean DSC: 0.9655
+Epoch 30/40 - Loss: 0.0195 - Background DSC: 0.9996 - Label 1 DSC: 0.9370 - Label 2 DSC: 0.9510 - Label 3 DSC: 0.9723 - Mean DSC: 0.9650
+Epoch 31/40 - Loss: 0.0189 - Background DSC: 0.9995 - Label 1 DSC: 0.9405 - Label 2 DSC: 0.9529 - Label 3 DSC: 0.9721 - Mean DSC: 0.9663
+Epoch 32/40 - Loss: 0.0187 - Background DSC: 0.9996 - Label 1 DSC: 0.9379 - Label 2 DSC: 0.9515 - Label 3 DSC: 0.9702 - Mean DSC: 0.9648
+Epoch 33/40 - Loss: 0.0187 - Background DSC: 0.9996 - Label 1 DSC: 0.9392 - Label 2 DSC: 0.9533 - Label 3 DSC: 0.9724 - Mean DSC: 0.9661
+Epoch 34/40 - Loss: 0.0184 - Background DSC: 0.9996 - Label 1 DSC: 0.9346 - Label 2 DSC: 0.9446 - Label 3 DSC: 0.9655 - Mean DSC: 0.9611
+Epoch 35/40 - Loss: 0.0183 - Background DSC: 0.9995 - Label 1 DSC: 0.9393 - Label 2 DSC: 0.9479 - Label 3 DSC: 0.9656 - Mean DSC: 0.9631
+Epoch 36/40 - Loss: 0.0177 - Background DSC: 0.9996 - Label 1 DSC: 0.9401 - Label 2 DSC: 0.9528 - Label 3 DSC: 0.9724 - Mean DSC: 0.9662
+Epoch 37/40 - Loss: 0.0177 - Background DSC: 0.9996 - Label 1 DSC: 0.9256 - Label 2 DSC: 0.9489 - Label 3 DSC: 0.9722 - Mean DSC: 0.9616
+Epoch 38/40 - Loss: 0.0176 - Background DSC: 0.9996 - Label 1 DSC: 0.9373 - Label 2 DSC: 0.9506 - Label 3 DSC: 0.9711 - Mean DSC: 0.9647
+Epoch 39/40 - Loss: 0.0172 - Background DSC: 0.9996 - Label 1 DSC: 0.9353 - Label 2 DSC: 0.9494 - Label 3 DSC: 0.9712 - Mean DSC: 0.9639
+Epoch 40/40 - Loss: 0.0174 - Background DSC: 0.9996 - Label 1 DSC: 0.9347 - Label 2 DSC: 0.9517 - Label 3 DSC: 0.9722 - Mean DSC: 0.9645
+
+Training completed in 498.50 seconds
+Best mean DSC: 0.9663

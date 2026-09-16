@@ -1,0 +1,61 @@
+=== OASIS VAE JOB ===
+Tue Sep 15 13:24:19 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   28C    P0             36W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Device: cuda
+GPU: NVIDIA A100-PCIE-40GB
+Training images: 9664
+Batch size: 128
+Image size: 64
+Latent dimensions: 2
+Epochs: 30
+Epoch 01/30 - Loss: 1276.4540
+Epoch 02/30 - Loss: 1082.8744
+Epoch 03/30 - Loss: 1078.6731
+Epoch 04/30 - Loss: 1073.3319
+Epoch 05/30 - Loss: 1066.8381
+Epoch 06/30 - Loss: 1062.9112
+Epoch 07/30 - Loss: 1056.3281
+Epoch 08/30 - Loss: 1054.5218
+Epoch 09/30 - Loss: 1053.5007
+Epoch 10/30 - Loss: 1052.8983
+Epoch 11/30 - Loss: 1052.4117
+Epoch 12/30 - Loss: 1051.7860
+Epoch 13/30 - Loss: 1051.3744
+Epoch 14/30 - Loss: 1051.2744
+Epoch 15/30 - Loss: 1050.7049
+Epoch 16/30 - Loss: 1050.5975
+Epoch 17/30 - Loss: 1050.3818
+Epoch 18/30 - Loss: 1050.1748
+Epoch 19/30 - Loss: 1049.8383
+Epoch 20/30 - Loss: 1049.7697
+Epoch 21/30 - Loss: 1049.5511
+Epoch 22/30 - Loss: 1049.2285
+Epoch 23/30 - Loss: 1049.1253
+Epoch 24/30 - Loss: 1048.9602
+Epoch 25/30 - Loss: 1048.7802
+Epoch 26/30 - Loss: 1048.5128
+Epoch 27/30 - Loss: 1048.3093
+Epoch 28/30 - Loss: 1048.1900
+Epoch 29/30 - Loss: 1047.9770
+Epoch 30/30 - Loss: 1047.8466
+
+Training completed in 149.32 seconds
+Model saved to: vae_results/oasis_vae.pth

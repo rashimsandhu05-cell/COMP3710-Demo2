@@ -63,7 +63,6 @@ test_dataset = datasets.CIFAR10(
     transform=test_transform
 )
 
-# Larger batches make better use of the A100 GPU.
 train_loader = DataLoader(
     train_dataset,
     batch_size=512,
